@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>居中方法大全</title>
+	<style type="text/css" media="screen">
+
+		/*方法一：*/
+		/*.ff{
+			width: 900px;
+			height: 500px;
+			border: 2px solid red;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+
+		}
+		.cc{
+			width: 400px;
+			height: 200px;
+			background-color: yellow;
+		}*/
+		
+
+		/*方法二*/
+		/*.ff{
+			width: 900px;
+			height: 500px;
+			border: 2px solid red;
+			display: flex;
+		
+			}
+		.cc{
+			width: 400px;
+			height: 200px;
+			background-color: yellow;
+			margin: auto;
+		}*/
+
+		/*方法三：*/
+		/*.ff{
+			width: 900px;
+			height: 500px;
+			border: 2px solid red;
+			display: flex;
+			justify-content: center; 
+
+		}
+		.cc{
+			width: 400px;
+			height: 200px;
+			background-color: yellow;
+			align-self: center;
+		}*/
+		/*方法四：*/
+		/*.ff{
+			width: 900px;
+			height: 500px;
+			border: 2px solid red;
+			position: relative;
+
+		}
+		.cc{
+			width: 400px;
+			height: 200px;
+			background-color: yellow;
+			position: absolute;
+			top:0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			margin: auto;
+		}*/
+		/*方法五*/
+		.ff{
+			width: 900px;
+			height: 600px;
+			border: 2px solid red;
+			/*position: relative;*/
+
+		}
+		.cc{
+			width: 400px;
+			height: 200px;
+			background-color: yellow;
+			margin:calc(50% - 250px) auto;
+			}
+
+	</style>
+</head>
+<body>
+	<div class="ff">
+		<div class="cc"></div>
+	</div>
+</body>
+</html>
