@@ -93,12 +93,83 @@
 			border: 3px solid #3742fa;
 			margin: 0 auto;
 			/*background-color: liner*/
-			background-image: linear-gradient(#eccc68,#ff7f50,#70a1ff,#2ed573,#a4b0be,#3742fa);
+			background-image: -webkit-linear-gradient(#eccc68,#ff7f50,#70a1ff,#2ed573,#a4b0be,#3742fa);
+			background-image: -o-linear-gradient(#eccc68,#ff7f50,#70a1ff,#2ed573,#a4b0be,#3742fa);
+			background-image: linear-gradient(to top,#eccc68,#ff7f50,#70a1ff,#2ed573,#a4b0be,#3742fa);  /*从下到上*/
+			background-image: linear-gradient(to left,#eccc68,#ff7f50,#70a1ff,#2ed573,#a4b0be,#3742fa);  /*从右到左*/
+			background-image: linear-gradient(180deg,#eccc68,#ff7f50,#70a1ff,#2ed573,#a4b0be,#3742fa);
+		}
+		.gradient_s{
+			position: relative;
+		}
+
+		.gradient_s>div{
+			/*border: 2px solid #00a8ff;*/
+			float: left;
+			/*background: linear-gradient(red green);*/
+			margin-bottom: 100px;
+			color: white;
+			
+		}
+		.gradient_s>div:first-child{
+			background-color: #00a8ff;
+		}
+		.gradient_s>div:nth-child(2){
+			background-color: #273c75;
+		}
+		.gradient_s>div:nth-child(3){
+			background-color: #2f3640;
+		}
+		.gradient_s>div:last-child{
+			background-color: #c23616;
+		}
+		.gradient_s>div>div{
+			position: absolute;
+			top: 80px;
+			left: 0;
+			color: black;
+			/*border: 1px solid green;*/
+			width: 656px;
+			height: 400px;
+			padding: 30px;
+			display: none;
+		}
+		.gradient_s>div:first-child>div{
+			background: linear-gradient(80deg,#00a8ff,#00a8ff);
+			
+		}
+		.gradient_s>div:nth-child(2)>div{
+			background:linear-gradient(80deg,#273c75，#273c75) ;	
+		}
+		.gradient_s>div:nth-child(3)>div{
+			background:linear-gradient(80deg,#2f3640, #2f3640) ;
+		
+		}
+		.gradient_s>div:last-child>div{
+			background:linear-gradient(80deg,#c23616，#c23616); 
+			
+		}
+		.gradient_s>div>div>button{
+			width: 80px;
+			height: 90px;
+			line-height: 90px;
+			font-size: 30px;
+		}
+		.gradient_s>div:hover>div{
+			display: block;
+		}
+		.wys{
+			display: inline-block;
+			text-align: center;
+			clear: left;
+			margin-bottom: 1000px;
+		}
+		.wys:hover{
+			color: red;
 		}
 	</style>
 </head>
 <body>
-
 
 	<div>
 		this a  div !
@@ -146,5 +217,47 @@
 	<div class="gradient">
 		
 	</div>
+	<div class="gradient_s">
+		<div>
+			毕甲甲
+			<div >
+				<!-- 这里是tab内容！ -->
+				<span>毕甲甲</span>
+				<button type="button">姓名</button>
+			</div>
+		</div>
+
+		<div>
+			一加一
+			<div>
+				<!-- 这里是tab内容！ -->
+				<span>一加一</span>
+				<button type="button">年龄</button>
+			</div>
+		</div>
+		
+		<div>
+			二乘三
+			<div>
+				<!-- 这里是tab内容！ -->
+				<span>二乘三</span>
+				<button type="button">性别</button>
+			</div>
+		</div>
+		
+		<div>
+			四乘四
+			<div>
+				<!-- 这里是tab内容！ -->
+				<span>四乘四</span>
+				<button type="button">年级</button>
+			</div>
+		</div>
+	</div>
+
+	<!-- 测试伪元素 -->
+	<a class="wys">
+		请悬浮在我上面！
+	</a>
 </body>
 </html>
