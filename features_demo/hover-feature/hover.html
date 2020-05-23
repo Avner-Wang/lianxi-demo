@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="initial-scale=1.0, maximum-scale=1, minimum-scale=1, user-scalable=no,uc-fitscreen=yes">
+	<title>hover特效</title>
+	<link rel="stylesheet" type="text/css" href="./hover-css.css">
+	<script src="../../util-js/jquery-dist/jquery.js" type="text/javascript" charset="utf-8" ></script>
+</head>
+<body>
+	<div class="container">
+		<h1>bilibili</h1>
+		<form action="hover_submit" method="get" accept-charset="utf-8">
+			<input class="input_content" type="text" placeholder="姓名">
+			<input class="input_content" type="password" name="">
+			<input class="sub" type="submit" value="请输入">
+		</form>
+		
+	</div>
+	<script type="text/javascript" charset="utf-8" async defer>
+		const conn=$('.container');
+		let isIn = true;  
+		let isOut = false;
+		conn.addEventListener('mouseenter',(e)=>{
+			if(isIn){
+				let inx=e.clientX-e.targetOffsetLeft;
+			}
+		});
+
+	</script>
+</body>
+</html>
