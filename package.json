@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/Avner-Wang/lianxi-demo#readme",
   "dependencies": {
-    "jquery": "^3.5.1"
+    "jquery": "^3.5.1",
+    "swiper": "^5.4.1"
   }
 }
