@@ -3,11 +3,11 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="content" scale='1.0'>
+	<meta name="viewport" content="content" initial='1' scale='1.0'>
 	<title>love-duoduo</title>
 	<link rel="stylesheet" href="">
 	<link rel="stylesheet" type="text/css" href="../../util-css/swiper-css/swiper.css">
-	<script src='../../util-js/swiper-js/swiper.js' type="text/javascript" charset="utf-8" async defer></script>
+	
 	<style type="text/css" media="screen">
 		*{
 			margin: 0;
@@ -75,6 +75,18 @@
 			width: 600px;
 			height: 150px;
 		}
+		.swiper-container{
+			width: 100%;
+			height: 400px;
+		}
+		.swiper-container img{
+			width: 100%;
+			height: 400px;
+		}
+		.swiper_ff{
+			position: fixed;
+			margin-top: 600px;
+		}
 	</style>
 </head>
 <body>
@@ -89,5 +101,45 @@
 	<br><br><br><br><br><br><br><br><br><br><br><br>
 	<audio src="../../music/just-want-to-love-you.mp3" autostart='true' autoloop='loop'  loop='loop' controls>
 	</audio>
+
+
+	
+
+
+	<div id="swiper_main" class="swiper-container  swiper_ff">
+	    <!-- Additional required wrapper -->
+	    <div class="swiper-wrapper">
+	        <!-- Slides -->
+	        <div class="swiper-slide"><img src="../../image/swiper_00.jpg" alt=""></div>
+	        <div class="swiper-slide"><img src="../../image/swiper_01.png" alt=""></div>
+	        <div class="swiper-slide"><img src="../../image/swiper_02.jpg" alt=""></div>
+	        ...
+	    </div>
+	    <!-- If we need pagination -->
+	    <div class="swiper-pagination"></div>
+
+	    <!-- If we need navigation buttons -->
+	    <div class="swiper-button-prev"></div>
+	    <div class="swiper-button-next"></div>
+
+	    <!-- If we need scrollbar -->
+	    <div class="swiper-scrollbar"></div>
+	 </div>
+
+<script src='../../util-js/swiper-js/swiper.js' type="text/javascript"></script>
+<script type="text/javascript" charset="utf-8" async defer>
+	new Swiper('#swiper_main',{
+		initialSlide:2,
+		loop:true,
+		autoplay:true,
+		speed:2000,
+		spaceBetween: 100,
+	});
+
+
+
+</script>
+
+
 </body>
 </html>
