@@ -1,0 +1,1 @@
+alert('am require.js');
