@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>js Array</title>
+	<link rel="stylesheet" href="">
+</head>
+<body>
+	<script  type="text/javascript">
+		let  arr=[1,23,445,656767,8787,32132];
+		// 查找第一个符合条件的值
+		let newArr=arr.find(function(item){    
+			return item>200;
+
+		})
+		// 查找符合条件的第一个索引
+		let newArrindex=arr.findIndex(function(item){
+			return item>600;
+
+		});
+        // 数组是否包含某一项，返回true/false
+	    let newArr3=arr.includes(445);
+	    console.log(newArr3);
+	   
+	    let newAbc=Array.of(1212,'wewewe','eeee',111,9232);
+	    console.log(newAbc);
+
+
+
+	</script>
+</body>
+</html>
