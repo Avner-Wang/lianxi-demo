@@ -28,6 +28,30 @@
 
 
 
+	    // object  ->  array    ①： 对象的属性必须是数字或者是数字的字符串②必须包含有length属性的对象
+	    // es5实现
+	    let obj={'abc':'abc','wyp':'wyp',length:20}
+	    let objcopy={'0':'abc','1':'wyp',length:20}
+	    let arrO=[].slice.call(obj);
+	    let arrOcopy=[].slice.call(objcopy);
+
+	    console.log(arrO instanceof Array)
+	    console.log(arrOcopy);
+
+	    // es6 Array from
+
+	    let obj2=Array.from(objcopy);
+
+	    console.log(obj2);
+
+
+
+
+
+
+
+
+
 	</script>
 </body>
 </html>
